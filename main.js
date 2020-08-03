@@ -1,6 +1,6 @@
 /*facebook*/
 function facebook(){
-	window.open('http://www.facebook.com/sharer/sharer.php?u=http://lolpt.site');
+	window.open('http://www.facebook.com/sharer/sharer.php?u=http://fakeman.shop');
 }
 /*kakao*/
 function kakao(){
@@ -10,7 +10,7 @@ function kakao(){
          , content : {
                title:"가짜사나이 교관 중 나는 누구?"   // 콘텐츠의 타이틀
              , description:"나와 맞는 가짜사나이 교관 찾기"   // 콘텐츠 상세설명
-             , imageUrl:"http://lolpt.site/LPT/img/share.png"   // 썸네일 이미지
+             , imageUrl:"img/fakeman.jpg"   // 썸네일 이미지
              , link : {
                    mobileWebUrl:"http://fakeman.shop"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
                  , webUrl:"http://fakeman.shop" // PC버전 카카오톡에서 사용하는 웹 링크 URL
