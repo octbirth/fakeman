@@ -1,43 +1,3 @@
-/*facebook*/
-function facebook(){
-	window.open('http://www.facebook.com/sharer/sharer.php?u=http://fakeman.shop');
-}
-/*kakao*/
-function kakao(){
-	 Kakao.init("7c9dd3736a9b7447af27693340fc2398");      // 사용할 앱의 JavaScript 키를 설정
-     Kakao.Link.sendDefault({
-           objectType:"feed"
-         , content : {
-               title:"가짜사나이 교관 중 나는 누구?"   // 콘텐츠의 타이틀
-             , description:"나와 맞는 가짜사나이 교관 찾기"   // 콘텐츠 상세설명
-             , imageUrl:"img/fakeman.jpg"   // 썸네일 이미지
-             , link : {
-                   mobileWebUrl:"http://fakeman.shop"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
-                 , webUrl:"http://fakeman.shop" // PC버전 카카오톡에서 사용하는 웹 링크 URL
-             }
-         }
-         , social : {
-               likeCount:0      // LIKE 개수
-             , commentCount:0    // 댓글 개수
-             , sharedCount:0     // 공유 회수
-         }
-         , buttons : [
-             {
-                   title:"나도 해볼까?"    // 버튼 제목
-                 , link : {
-                     mobileWebUrl:"http://fakeman.shop"   // 모바일 카카오톡에서 사용하는 웹 링크 URL
-                   , webUrl:"http://fakeman.shop" // PC버전 카카오톡에서 사용하는 웹 링크 URL
-                 }
-             }
-         ]
-     });
-}
-
-/*naver*/
-function naver(){
-	window.open('http://share.naver.com/web/shareView.nhn?url='+encodeURIComponent('http://fakeman.shop')+'&title='+encodeURIComponent('롤 포지션 테스트'));
-}
-
 
 /*Ad*/
 function Ad(){
@@ -285,10 +245,6 @@ function setPage(a,b,c,d,e,eng,result,message){
 	var html = document.getElementById('result');
 	var tag = '';
 	
-	tag += '<div class = "sns">';
-	tag += '<img src = "img/facebook.png" onclick="facebook()"/>';
-	tag += '<img src = "img/kakao.png" onclick="kakao()"/>';
-	tag += '<img src = "img/naver.png" onclick="naver()"/>';
 	tag += '</div><br>';
 	tag += '<img width="30%" src="'+eng+'"><br>';
 	tag += '<span id="position">'+result+'</span><br><br><br>';
