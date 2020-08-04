@@ -246,7 +246,7 @@ function setPage(a,b,c,d,e,eng,result,message){
 	var tag = '';
 	
 	tag += '</div><br>';
-	tag += '<img width="30%" src="'+eng+'"><br>';
+	tag += '<img width="50%" src="'+eng+'"><br>';
 	tag += '<span id="position">'+result+'</span><br><br><br>';
 	tag += '<span id="position_text">'+message+'</span><br><br><br>';
 	
